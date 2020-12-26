@@ -2,7 +2,7 @@
  * @Author: shen
  * @Date: 2020-12-25 21:21:32
  * @LastEditors: shen
- * @LastEditTime: 2020-12-26 09:49:36
+ * @LastEditTime: 2020-12-26 12:56:19
  * @Description: 
  */
 import commonjs from '@rollup/plugin-commonjs'
@@ -23,7 +23,7 @@ const config =  {
     json(),
     resolve(),
     vue({
-      css: true,
+      css: false,
       compileTemplate: true
     }),
     babel({

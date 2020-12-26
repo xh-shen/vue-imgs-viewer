@@ -2,11 +2,23 @@
  * @Author: shen
  * @Date: 2020-12-25 10:52:41
  * @LastEditors: shen
- * @LastEditTime: 2020-12-26 14:11:39
+ * @LastEditTime: 2020-12-26 15:36:39
  * @Description:
 -->
 
 # vue-imgs-viewer
+
+一个 vue2 图片预览组件，支持切换、旋转、缩放等功能，不依赖其他三方库，可以直接使用。
+
+## 安装
+
+```sh
+# Yarn
+yarn add vue-imgs-viewer
+
+# Npm
+npm install vue-imgs-viewer --save
+```
 
 ## Attribute
 
@@ -35,11 +47,41 @@
 ```vue
 <template>
   <div>
-    <image-viewer
+    <button @click="showViewer = true">预览图片</button>
+    <imgs-viewer
       v-model="showViewer"
       :initial-index="imageIndex"
-      :img-list="srcList"
+      close-on-click-mask
+      :closeOnPressEscape="false"
+      :img-list="imgList"
     />
   </div>
 </template>
+
+<script>
+import ImgsViewer from 'vue-imgs-viewer'
+import 'vue-imgs-viewer/dist/index.css'
+export default {
+  components: { ImgsViewer },
+  data() {
+    return {
+      showViewer: false,
+      imageIndex: 0,
+      imgList: [
+        {
+          url: '图片地址',
+          title: '图片名称', //可以没有
+        },
+        {
+          url: '图片地址',
+          title: '图片名称', //可以没有
+        },
+      ],
+    }
+  },
+  methods: {},
+}
+</script>
+
+<style></style>
 ```

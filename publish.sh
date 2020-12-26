@@ -2,12 +2,12 @@
  # @Author: shen
  # @Date: 2020-12-26 11:09:35
  # @LastEditors: shen
- # @LastEditTime: 2020-12-26 14:47:28
+ # @LastEditTime: 2020-12-26 15:20:46
  # @Description: 
 ### 
 
 npm run build
-
+cp ./scr/assets/fonts ./dist
 old_registry=$(npm config get registry)
 npm config set registry https://registry.npmjs.org
 whoami=$(npm whoami 2>/dev/null)

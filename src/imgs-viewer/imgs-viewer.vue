@@ -364,6 +364,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/scss/iconfont.scss';
+
 .image-viewer {
   &__wrapper {
     position: fixed;

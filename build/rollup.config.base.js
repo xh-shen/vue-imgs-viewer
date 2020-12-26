@@ -2,7 +2,7 @@
  * @Author: shen
  * @Date: 2020-12-25 21:21:32
  * @LastEditors: shen
- * @LastEditTime: 2020-12-26 12:56:19
+ * @LastEditTime: 2020-12-26 14:56:15
  * @Description: 
  */
 import commonjs from '@rollup/plugin-commonjs'
@@ -10,6 +10,7 @@ import json from '@rollup/plugin-json'
 import resolve from '@rollup/plugin-node-resolve'
 import babel from '@rollup/plugin-babel'
 import vue from "rollup-plugin-vue"
+import font from "rollup-plugin-font"
 import { name, main, module } from '../package.json'
 
 const config =  {
@@ -31,6 +32,13 @@ const config =  {
       babelHelpers: "bundled",
       presets: ["@vue/babel-preset-jsx"]
     }),
+    font({
+			"include": [
+				"src/assets/fonts"
+      ],
+      "svg":"src/assets/fonts/iconfont.svg",
+			"outDir":"dist/fonts"
+		}),
     commonjs()
   ]
 }

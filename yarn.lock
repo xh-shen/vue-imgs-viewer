@@ -2383,6 +2383,11 @@ void-elements@^2.0.1:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
   integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
+vue-imgs-viewer@0.0.4-2:
+  version "0.0.4-2"
+  resolved "https://registry.yarnpkg.com/vue-imgs-viewer/-/vue-imgs-viewer-0.0.4-2.tgz#68c218429b26dc93687cd45949590c770cb7aa29"
+  integrity sha512-4Zm6KeLJ5exlZ6KqNyaiUX/5SL7PWOidy0k7mOhlpDD4NJpPNqBRPxQ+kmcE3un13hdHD/Jlm+NiNV5cZQkE6A==
+
 vue-runtime-helpers@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vue-runtime-helpers/-/vue-runtime-helpers-1.1.2.tgz#446b7b820888ab0c5264d2c3a32468e72e4100f3"

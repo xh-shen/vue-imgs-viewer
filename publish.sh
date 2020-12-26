@@ -2,9 +2,11 @@
  # @Author: shen
  # @Date: 2020-12-26 11:09:35
  # @LastEditors: shen
- # @LastEditTime: 2020-12-26 11:32:19
+ # @LastEditTime: 2020-12-26 14:47:28
  # @Description: 
 ### 
+
+npm run build
 
 old_registry=$(npm config get registry)
 npm config set registry https://registry.npmjs.org

@@ -2,13 +2,15 @@
  # @Author: shen
  # @Date: 2020-12-26 11:09:35
  # @LastEditors: shen
- # @LastEditTime: 2020-12-26 15:23:22
+ # @LastEditTime: 2020-12-26 15:26:53
  # @Description: 
 ### 
 
 rm -rf ./dist
 npm run build
-cp ./src/assets/fonts ./dist
+mkdir ./dist/fonts
+
+cp ./src/assets/fonts/* ./dist/fonts
 old_registry=$(npm config get registry)
 npm config set registry https://registry.npmjs.org
 whoami=$(npm whoami 2>/dev/null)

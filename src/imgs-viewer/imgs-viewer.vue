@@ -216,7 +216,7 @@ export default {
     currentImg(val) {
       this.$nextTick((_) => {
         const $img = this.$refs.img
-        if (!$img?.complete) {
+        if ($img && !$img.complete) {
           this.loading = true
         }
       })
